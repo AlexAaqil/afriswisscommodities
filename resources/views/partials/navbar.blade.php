@@ -10,7 +10,6 @@
             $nav_links = [
                 ['route' => 'about-page', 'text' => 'About'],
                 ['route' => 'services-page', 'text' => 'Services'],
-                ['route' => 'users.blogs', 'text' => 'Blogs'],
                 ['route' => 'contact-page', 'text' => 'Contact'],
             ];
         @endphp
