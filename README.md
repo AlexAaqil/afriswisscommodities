@@ -1,6 +1,10 @@
 # Laravel Blade Template
 
-A blue-print for laravel blade projects with an admin dashboard and authentication.
+A blue-print for basic laravel blade projects.
+
+# Features
+- Authentication.
+- Admin dashboard.
 
 ## Installation
 1. Clone the Repository
