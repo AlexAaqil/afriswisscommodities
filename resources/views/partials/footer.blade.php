@@ -1,43 +1,52 @@
 <footer>
     <div class="container">
         <section class="branding">
-            <p class="title">{{ $appSettings['school_name'] ?? config('globals.app_name') }}</p>
-            <p>Better start for new projects.</p>
-            <p>{{ $appSettings['app_address'] ?? config('globals.app_address') }}</p>
+            <p class="title">{{ config('globals.app_name') }}</p>
+            <p>{{ config('globals.app_slogan') }}</p>
+            <p>{{ config('globals.app_address') }}</p>
         </section>
 
-        <section class="links">
-            <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}">Home</a>
-            <a href="{{ Route::has('about-page') ? route('about-page') : '#' }}">About</a>
-            <a href="{{ Route::has('services-page') ? route('about-page') : '#' }}">Services</a>
-            <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}">Contact</a>
+        <section class="site_map">
+            <p class="title">Site Map</p>
+            <div class="links">
+                <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}">Home</a>
+                <a href="{{ Route::has('about-page') ? route('about-page') : '#' }}">About</a>
+                <a href="{{ Route::has('services-page') ? route('about-page') : '#' }}">Services</a>
+                <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}">Contact</a>
+            </div>
+        </section>
+
+        <section class="services">
+            <p class="title">Our Services</p>
+            <div class="links">
+                <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}">Home</a>
+                <a href="{{ Route::has('about-page') ? route('about-page') : '#' }}">About</a>
+                <a href="{{ Route::has('services-page') ? route('about-page') : '#' }}">Services</a>
+                <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}">Contact</a>
+            </div>
         </section>
 
         <section class="contacts">
-            <div class="details">
-                <p>
-                    {{ $appSettings['app_phone_number'] ?? config('globals.app_phone_number') }}
-                    @if(!empty($appSettings['app_phone_other']))
-                        / {{ $appSettings['app_phone_other'] }}
-                    @endif
-                    @if(!empty(config('globals.app_phone_other')))
-                        / {{ config('globals.app_phone_other') }}
-                    @endif
-                </p>
-                <p>{{ $appSettings['app_email'] ?? config('globals.app_email') }}</p>
-            </div>
+            <p class="title">Contact Info</p>
+            <div class="contact_details">
+                <div class="details">
+                    <p>
+                        {{ config('globals.app_phone_number') }}
+                        @if(!empty(config('globals.app_phone_other')))
+                            / {{ config('globals.app_phone_other') }}
+                        @endif
+                    </p>
+                    <p>{{ config('globals.app_email') }}</p>
+                </div>
 
-            <div class="socials">
-                <a href="https://wa.me/{{ $appSettings['whatsapp_number'] ?? config('globals.app_whatsapp_number') }}">
-                    <img src="{{ asset('assets/images/whatsapp.png') }}" alt="{{ config('globals.app_name') }} Whatsapp" width="30px" height="30px">
-                </a>
-
-                <a href="#">
-                    <img src="{{ asset('assets/images/instagram.png') }}" alt="{{ config('globals.app_name') }} Instagram" width="30px" height="30px">
-                </a>
+                <div class="socials">
+                    <a href="https://wa.me/{{ config('globals.app_whatsapp_number') }}">
+                        <img src="{{ asset('assets/images/whatsapp.png') }}" alt="{{ config('globals.app_name') }} Whatsapp" width="30px" height="30px">
+                    </a>
+                </div>
             </div>
         </section>
     </div>
 
-    <p class="copyright">&copy; 2024 | All rights reserved</p>
+    <p class="copyright">&copy; 2025 | {{ config('globals.app_name') }}</p>
 </footer>

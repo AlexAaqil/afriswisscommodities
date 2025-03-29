@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif, 'Open Sans', 'Helvetica Neue';
+    // outline: 0.5px solid $faded_line;
 }
 
 body {
     background: $background_color;
     color: $text_color;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -17,7 +19,12 @@ body {
 img {
     height: 100%;
     width: 100%;
+    border-radius: 8px;
     object-fit: cover;
+}
+
+p {
+    line-height: 1.5;
 }
 
 a {

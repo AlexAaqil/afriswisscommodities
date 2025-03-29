@@ -8,6 +8,7 @@
     <div class="nav_links">
         @php
             $nav_links = [
+                ['route' => 'home-page', 'text' => 'Home'],
                 ['route' => 'about-page', 'text' => 'About'],
                 ['route' => 'services-page', 'text' => 'Services'],
                 ['route' => 'contact-page', 'text' => 'Contact'],
@@ -41,7 +42,7 @@
                 </form>
             </div>
         @else
-            <a href="{{ route('login') }}" class="login_btn">Login</a>
+            <a href="{{ route('login') }}" class="login_btn">Make An Inquiry</a>
         @endif
     </div>
 

@@ -6,13 +6,18 @@ nav {
     grid-template-columns: 50% 1fr auto;
     gap: 1em;
     position: sticky;
+    background: $background_color;
+    color: $text_color;
     top: 0;
-    background: rgba($background_color, 0.8);
     backdrop-filter: blur(5px);
     z-index: 1000;
 
     a {
         color: $text_color;
+
+        &:hover {
+            color: $special_background;
+        }
     }
 
     .brand {
@@ -29,6 +34,8 @@ nav {
 
         .active {
             font-weight: bold;
+            color: $special_background;
+            border-bottom: 2px solid $special_background;
         }
     }
 
@@ -37,8 +44,7 @@ nav {
 
         .login_btn,
         .logout_btn {
-            color: #ededed;
-            padding: 6px 16px;
+            padding: 12px 24px;
             border-radius: 32px;
             text-transform: uppercase;
             font-weight: bold;
@@ -50,12 +56,14 @@ nav {
             gap: 1em;
 
             .logout_btn {
+                color: #ededed;
                 background: rgb(240, 6, 6);
             }
         }
 
         .login_btn {
-            background: #000;
+            background: $special_background;
+            color: $special_color;
         }
     }
 
@@ -64,7 +72,7 @@ nav {
     }
 }
 
-@media screen and (width <= 726px) {
+@media screen and (max-width: 726px) {
     nav {
         grid-template-columns: 1fr auto auto auto;
         gap: 0.5em;

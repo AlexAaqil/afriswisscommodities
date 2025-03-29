@@ -1,11 +1,23 @@
 footer {
-    background: darken($background_color, 15%);
+    background: $elements_background;
+    color: $elements_color;
     
     .container {
         padding: 2.8em 5%;
 
         section {
             margin: 0 0 1.5em;
+
+            .links {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+
+                a {
+                    color: $elements_color;
+                    font-weight: 500;
+                }
+            }
         }
 
         .branding {
@@ -15,15 +27,19 @@ footer {
             }
         }
 
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
+        .site_map,
+        .services,
+        .contacts {
+            .title {
+                margin: 0 0 0.4em;
+                font-size: 1.2em;
+            }
         }
 
         .contacts {
             .socials {
                 margin: 0.8em 0 0;
+
                 img {
                     width: 24px;
                     height: 24px;
@@ -40,17 +56,16 @@ footer {
     }
 }
 
-@media screen and (width >= 726px) {
+@media screen and (min-width: 1024px) {
     footer {
         .container {
             display: grid;
-            grid-template-columns: 30% 1fr 1fr;
+            grid-template-columns: 30% 1fr 1fr 1fr;
 
             section {
                 margin: 0;
             }
 
-            .links,
             .contacts {
                 justify-self: center;
             }
