@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'app_name' => 'Aaqil Softwares',
-    'app_acronym' => 'A.S',
-    'app_slogan' => 'Best Software Solutions Company in the world',
-    'app_phone_number' => '+254 746 055 487',
-    'app_phone_other' => '+254 746 055 488',
-    'app_whatsapp_number' => '254746055487',
-    'app_email' => 'alexaaqil.se@gmail.com',
-    'app_location' => 'Africa',
-    'app_address' => 'Ruii, Kiambu',
+    'app_name' => 'Afriswiss Gold Limited',
+    'app_acronym' => 'A.G.L',
+    'app_slogan' => 'Unmatched precious metal trading services.',
+    'app_phone_number' => '+254 113 090 555',
+    'app_phone_other' => '',
+    'app_whatsapp_number' => '254113090555',
+    'app_email' => 'afriswisscommodities@gmail.com',
+    'app_location' => 'Kenya',
+    'app_address' => 'Wilson Airport, Nairobi, Kenya',
 ];
