@@ -14,13 +14,74 @@ body {
 
 .container {
     padding: 10px 5%;
+
+    .section_header {
+        margin: 0 0 1.6em;
+
+        h2 {
+            @include font_size(0.96em, 0.96, 1em);
+            margin: 0 0 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 2px;
+                background-color: $special_background;
+            }
+        }
+
+        p {
+            @include font_size(1.92em, 1.92em, 2em);
+            font-weight: bold;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+    }
+}
+
+.page_hero {
+    margin: 0 0 3.2em;
+    padding: 16px 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+            @include font_size(1.2em, 1.2em, 2.4em);
+            position: relative;
+            display: inline-block;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -24px;
+                width: 100%;
+                height: 2px;
+                background-color: $text_color;
+            }
+        }
+    }
 }
 
 img {
-    height: 100%;
-    width: 100%;
     border-radius: 8px;
-    object-fit: cover;
+}
+
+.image {
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 p {
@@ -38,4 +99,74 @@ a {
 
 .title {
     font-weight: bold;
+}
+
+.ServicesPage,
+.ProductsPage {
+    .Services,
+    .Products {
+        .container {
+            display: grid;
+            gap: 2em;
+
+            .service,
+            .product {
+                .header {
+                    border-bottom: 1px solid $text_color;
+                    padding: 16px 2px;
+                    margin: 0 0 1.6em;
+
+                    h2 {
+                        @include font_size(1.6em, 1.6em, 3.2em);
+                        letter-spacing: 0.8px;
+                    }
+                }
+
+                p {
+                    margin: 0 0 1.6em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        .section_header {
+            text-align: center;
+            margin: 0 0 3.2em;
+        }
+    }
+
+    .ServicesPage,
+    .ProductsPage {
+
+        .Services,
+        .Products {
+            .container {
+                .service,
+                .product {
+                    min-height: 90dvh;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    align-items: center;
+                    gap: 3.2em;
+
+                    .image {
+                        grid-area: image;
+                    }
+
+                    .text {
+                        grid-area: text;
+                    }
+
+                    grid-template-areas: "image text";
+
+                    &:nth-child(even) {
+                        grid-template-areas: "text image";
+                    }
+                }
+            }
+        }
+    }
 }

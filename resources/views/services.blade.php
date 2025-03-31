@@ -119,10 +119,10 @@
         </script>
     </x-slot>
 
-    <section class="Hero">
+    <section class="Hero page_hero">
         <div class="container">
             <h1>Our Services</h1>
-            <p>Explore our Gold Refining, Smelting and Bullion Trading Services</p>
+            {{-- <p>Explore our Gold Refining, Smelting and Bullion Trading Services</p> --}}
         </div>
     </section>
 
@@ -130,7 +130,7 @@
         <div class="container">
             <div class="service" id="gold-refining">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-refining.webp') }}" alt="{{ config('globals.app_name') }} Gold Refining">
                 </div>
 
                 <div class="text">
@@ -145,7 +145,7 @@
 
             <div class="service" id="assaying">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-assaying.webp') }}" alt="{{ config('globals.app_name') }} Assaying">
                 </div>
 
                 <div class="text">
@@ -159,20 +159,20 @@
 
             <div class="service" id="smelting">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-smelting.webp') }}" alt="{{ config('globals.app_name') }} Gold Smelting">
                 </div>
 
                 <div class="text">
                     <div class="header">
                         <h2>Smelting and Metal Scraping</h2>
                     </div>
-                    <p>As the leading gold refinery in Uganda, {{ config('globals.app_name') }} offers a full spectrum of smelting services to suit our client's requirements. Our state-of-the-art facilities coupled with our team of experts enable us to simultaneously process huge lots of gold while ensuring the highest quality standards and the shortest turnaround times at a very competitive premium to internationally accepted quality standards.</p>
+                    <p>As the leading gold refinery in {{ config('globals.app_location') }}, {{ config('globals.app_name') }} offers a full spectrum of smelting services to suit our client's requirements. Our state-of-the-art facilities coupled with our team of experts enable us to simultaneously process huge lots of gold while ensuring the highest quality standards and the shortest turnaround times at a very competitive premium to internationally accepted quality standards.</p>
                 </div>
             </div>
 
             <div class="service" id="bullion-trading">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-bullion-trading.webp') }}" alt="{{ config('globals.app_name') }} Bullion Trading">
                 </div>
 
                 <div class="text">
@@ -185,7 +185,7 @@
 
             <div class="service" id="minting">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-minting.webp') }}" alt="{{ config('globals.app_name') }} Minting">
                 </div>
 
                 <div class="text">
@@ -198,7 +198,7 @@
 
             <div class="service" id="transportation-and-logistics">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-transport.webp') }}" alt="{{ config('globals.app_name') }} Transportation and Logistics">
                 </div>
 
                 <div class="text">
@@ -211,4 +211,17 @@
             </div>
         </div>
     </section>
+
+    <x-slot name="scripts">
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                if (window.location.hash) {
+                    const element = document.querySelector(window.location.hash);
+                    if (element) {
+                        element.scrollIntoView({ behavior: "smooth" });
+                    }
+                }
+            });
+        </script>
+    </x-slot>
 </x-guest-layout>

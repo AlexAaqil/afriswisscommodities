@@ -11,7 +11,8 @@
             <div class="links">
                 <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}">Home</a>
                 <a href="{{ Route::has('about-page') ? route('about-page') : '#' }}">About</a>
-                <a href="{{ Route::has('services-page') ? route('about-page') : '#' }}">Services</a>
+                <a href="{{ Route::has('services-page') ? route('services-page') : '#' }}">Services</a>
+                <a href="{{ Route::has('products-page') ? route('products-page') : '#' }}">Products</a>
                 <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}">Contact</a>
             </div>
         </section>
@@ -19,10 +20,12 @@
         <section class="services">
             <p class="title">Our Services</p>
             <div class="links">
-                <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}">Home</a>
-                <a href="{{ Route::has('about-page') ? route('about-page') : '#' }}">About</a>
-                <a href="{{ Route::has('services-page') ? route('about-page') : '#' }}">Services</a>
-                <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}">Contact</a>
+                <a href="{{ Route::has('services-page') ? route('services-page') . '#gold-refining' : '#' }}">Gold Refining</a>
+                <a href="{{ Route::has('services-page') ? route('services-page') . '#assaying' : '#' }}">Assaying</a>
+                <a href="{{ Route::has('services-page') ? route('services-page') . '#smelting' : '#' }}">Smelting</a>
+                <a href="{{ Route::has('services-page') ? route('services-page') . '#bullion-trading' : '#' }}">Bullion Trading</a>
+                <a href="{{ Route::has('services-page') ? route('services-page') . '#minting' : '#' }}">Minting</a>
+                <a href="{{ Route::has('services-page') ? route('services-page') . '#transportation-and-logistics' : '#' }}">Transport & Logistics</a>
             </div>
         </section>
 
@@ -41,7 +44,7 @@
 
                 <div class="socials">
                     <a href="https://wa.me/{{ config('globals.app_whatsapp_number') }}">
-                        <img src="{{ asset('assets/images/whatsapp.png') }}" alt="{{ config('globals.app_name') }} Whatsapp" width="30px" height="30px">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-whatsapp.webp') }}" alt="{{ config('globals.app_name') }} Whatsapp" width="30px" height="30px">
                     </a>
                 </div>
             </div>

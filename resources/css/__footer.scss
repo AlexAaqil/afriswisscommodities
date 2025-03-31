@@ -62,12 +62,14 @@ footer {
             display: grid;
             grid-template-columns: 30% 1fr 1fr 1fr;
 
-            section {
-                margin: 0;
+            .site_map,
+            .services,
+            .contacts {
+                justify-self: center;   
             }
 
-            .contacts {
-                justify-self: center;
+            section {
+                margin: 0;
             }
         }
     }

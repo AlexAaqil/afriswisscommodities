@@ -47,10 +47,109 @@ body {
   padding: 10px 5%;
 }
 
+.container .section_header {
+  margin: 0 0 1.6em;
+}
+
+.container .section_header h2 {
+  font-size: 0.96em;
+  margin: 0 0 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+@media screen and (min-width: 726px) {
+  .container .section_header h2 {
+    font-size: 0.96;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .section_header h2 {
+    font-size: 1em;
+  }
+}
+
+.container .section_header h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: #e33b28;
+}
+
+.container .section_header p {
+  font-size: 1.92em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 726px) {
+  .container .section_header p {
+    font-size: 1.92em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container .section_header p {
+    font-size: 2em;
+  }
+}
+
+.page_hero {
+  margin: 0 0 3.2em;
+  padding: 16px 0;
+}
+
+.page_hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page_hero .container h1 {
+  font-size: 1.2em;
+  position: relative;
+  display: inline-block;
+}
+
+@media screen and (min-width: 726px) {
+  .page_hero .container h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page_hero .container h1 {
+    font-size: 2.4em;
+  }
+}
+
+.page_hero .container h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
 img {
+  border-radius: 8px;
+}
+
+.image img {
   height: 100%;
   width: 100%;
-  border-radius: 8px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -70,6 +169,137 @@ a:hover {
 
 .title {
   font-weight: bold;
+}
+
+.ServicesPage .Services .container,
+.ServicesPage .Products .container,
+.ProductsPage .Services .container,
+.ProductsPage .Products .container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+}
+
+.ServicesPage .Services .container .service .header,
+.ServicesPage .Services .container .product .header,
+.ServicesPage .Products .container .service .header,
+.ServicesPage .Products .container .product .header,
+.ProductsPage .Services .container .service .header,
+.ProductsPage .Services .container .product .header,
+.ProductsPage .Products .container .service .header,
+.ProductsPage .Products .container .product .header {
+  border-bottom: 1px solid #000;
+  padding: 16px 2px;
+  margin: 0 0 1.6em;
+}
+
+.ServicesPage .Services .container .service .header h2,
+.ServicesPage .Services .container .product .header h2,
+.ServicesPage .Products .container .service .header h2,
+.ServicesPage .Products .container .product .header h2,
+.ProductsPage .Services .container .service .header h2,
+.ProductsPage .Services .container .product .header h2,
+.ProductsPage .Products .container .service .header h2,
+.ProductsPage .Products .container .product .header h2 {
+  font-size: 1.6em;
+  letter-spacing: 0.8px;
+}
+
+@media screen and (min-width: 726px) {
+  .ServicesPage .Services .container .service .header h2,
+  .ServicesPage .Services .container .product .header h2,
+  .ServicesPage .Products .container .service .header h2,
+  .ServicesPage .Products .container .product .header h2,
+  .ProductsPage .Services .container .service .header h2,
+  .ProductsPage .Services .container .product .header h2,
+  .ProductsPage .Products .container .service .header h2,
+  .ProductsPage .Products .container .product .header h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ServicesPage .Services .container .service .header h2,
+  .ServicesPage .Services .container .product .header h2,
+  .ServicesPage .Products .container .service .header h2,
+  .ServicesPage .Products .container .product .header h2,
+  .ProductsPage .Services .container .service .header h2,
+  .ProductsPage .Services .container .product .header h2,
+  .ProductsPage .Products .container .service .header h2,
+  .ProductsPage .Products .container .product .header h2 {
+    font-size: 3.2em;
+  }
+}
+
+.ServicesPage .Services .container .service p,
+.ServicesPage .Services .container .product p,
+.ServicesPage .Products .container .service p,
+.ServicesPage .Products .container .product p,
+.ProductsPage .Services .container .service p,
+.ProductsPage .Services .container .product p,
+.ProductsPage .Products .container .service p,
+.ProductsPage .Products .container .product p {
+  margin: 0 0 1.6em;
+}
+
+@media screen and (min-width: 1024px) {
+  .container .section_header {
+    text-align: center;
+    margin: 0 0 3.2em;
+  }
+  .ServicesPage .Services .container .service,
+  .ServicesPage .Services .container .product,
+  .ServicesPage .Products .container .service,
+  .ServicesPage .Products .container .product,
+  .ProductsPage .Services .container .service,
+  .ProductsPage .Services .container .product,
+  .ProductsPage .Products .container .service,
+  .ProductsPage .Products .container .product {
+    min-height: 90dvh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3.2em;
+        grid-template-areas: "image text";
+  }
+  .ServicesPage .Services .container .service .image,
+  .ServicesPage .Services .container .product .image,
+  .ServicesPage .Products .container .service .image,
+  .ServicesPage .Products .container .product .image,
+  .ProductsPage .Services .container .service .image,
+  .ProductsPage .Services .container .product .image,
+  .ProductsPage .Products .container .service .image,
+  .ProductsPage .Products .container .product .image {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: image;
+  }
+  .ServicesPage .Services .container .service .text,
+  .ServicesPage .Services .container .product .text,
+  .ServicesPage .Products .container .service .text,
+  .ServicesPage .Products .container .product .text,
+  .ProductsPage .Services .container .service .text,
+  .ProductsPage .Services .container .product .text,
+  .ProductsPage .Products .container .service .text,
+  .ProductsPage .Products .container .product .text {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: text;
+  }
+  .ServicesPage .Services .container .service:nth-child(even),
+  .ServicesPage .Services .container .product:nth-child(even),
+  .ServicesPage .Products .container .service:nth-child(even),
+  .ServicesPage .Products .container .product:nth-child(even),
+  .ProductsPage .Services .container .service:nth-child(even),
+  .ProductsPage .Services .container .product:nth-child(even),
+  .ProductsPage .Products .container .service:nth-child(even),
+  .ProductsPage .Products .container .product:nth-child(even) {
+        grid-template-areas: "text image";
+  }
 }
 
 nav {
@@ -125,6 +355,7 @@ nav .nav_links .active {
 }
 
 nav .nav_authentication {
+  display: none;
   margin-left: 2em;
 }
 
@@ -451,12 +682,14 @@ footer .copyright {
     -ms-grid-columns: 30% 1fr 1fr 1fr;
         grid-template-columns: 30% 1fr 1fr 1fr;
   }
-  footer .container section {
-    margin: 0;
-  }
+  footer .container .site_map,
+  footer .container .services,
   footer .container .contacts {
     -ms-grid-column-align: center;
         justify-self: center;
+  }
+  footer .container section {
+    margin: 0;
   }
 }
 
@@ -914,72 +1147,137 @@ button:hover {
 }
 
 .HomePage section {
-  margin: 0 0 5em;
+  margin: 0 0 7em;
 }
 
-.HomePage section .container .header {
+.HomePage .Hero {
+  height: 60dvh;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  outline: 2px solid red;
+}
+
+.HomePage .Hero .container_fluid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.HomePage .Hero .container_fluid .illustration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.HomePage .Hero .container_fluid .illustration video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  opacity: 0.8;
+}
+
+.HomePage .Hero .container_fluid .text {
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+  z-index: 1;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+}
+
+.HomePage .About .container .content p,
+.HomePage .About .container .image p {
   margin: 0 0 1.6em;
 }
 
-.HomePage section .container .header h2 {
-  margin: 0 0 0.4em;
-  font-size: 0.96em;
-  text-transform: uppercase;
-  position: relative;
-  display: inline-block;
+.HomePage .About .container .image p {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.HomePage .CTA .cta {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  padding: 16px;
+  border-radius: 8px;
+  background: #121212;
+  color: #fff;
+}
+
+.HomePage .CTA .cta h2,
+.HomePage .CTA .cta p {
+  font-size: 1em;
 }
 
 @media screen and (min-width: 726px) {
-  .HomePage section .container .header h2 {
-    font-size: 0.96;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .HomePage section .container .header h2 {
+  .HomePage .CTA .cta h2,
+  .HomePage .CTA .cta p {
     font-size: 1em;
   }
 }
 
-.HomePage section .container .header h2::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 100%;
-  height: 2px;
-  background-color: #e33b28;
-}
-
-.HomePage section .container .header p {
-  font-size: 1.92em;
-  font-weight: bold;
-}
-
-@media screen and (min-width: 726px) {
-  .HomePage section .container .header p {
-    font-size: 1.92em;
-  }
-}
-
 @media screen and (min-width: 1024px) {
-  .HomePage section .container .header p {
-    font-size: 2em;
+  .HomePage .CTA .cta h2,
+  .HomePage .CTA .cta p {
+    font-size: 1.6em;
   }
 }
 
-.HomePage .Hero {
-  height: 55dvh;
+.HomePage .CTA .cta .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.8em;
 }
 
-.HomePage .About .container .content p {
-  margin: 0 0 1.6em;
+.HomePage .CTA .cta .content .image {
+  background: #fff;
+  padding: 8px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
 
 .HomePage .Services .container .content {
   display: -ms-grid;
   display: grid;
   gap: 2em;
+}
+
+.HomePage .Services .container .content .card {
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
 }
 
 .HomePage .Services .container .content .card .image {
@@ -1019,80 +1317,282 @@ button:hover {
   text-underline-offset: 6px;
 }
 
-.ContactPage .container {
-  display: -ms-grid;
-  display: grid;
-  gap: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1024px) {
+  .HomePage .Hero .container_fluid .text {
+    left: 5%;
+  }
+  .HomePage .About .container {
+    display: -ms-grid;
+    display: grid;
+    gap: 3em;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .HomePage .About .container .content .section_header {
+    text-align: left;
+  }
+  .HomePage .About .container .content .section_header p {
+    width: 80%;
+    font-size: 4em;
+    margin: 0 0 1em;
+  }
+  .HomePage .About .container .content .text p {
+    width: 75%;
+  }
+  .HomePage .CTA .cta {
+    height: 15dvh;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .HomePage .Services .container .content {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-.ContactPage .container .text .title {
+.AboutPage .About .content p {
+  margin: 0 0 1.6em;
+}
+
+.AboutPage .History .container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+}
+
+.AboutPage .History .container .history {
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  padding: 16px 12px;
+}
+
+.AboutPage .History .container .history .header {
+  margin: 0 0 1.2em;
+}
+
+.AboutPage .History .container .history .header h2 {
   font-size: 1.2em;
-  margin: 0 0 0.8em;
+  margin: 0 0 0.68em;
+  color: #e33b28;
+  position: relative;
+  display: inline-block;
 }
 
 @media screen and (min-width: 726px) {
-  .ContactPage .container .text .title {
+  .AboutPage .History .container .history .header h2 {
     font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .ContactPage .container .text .title {
-    font-size: 3.2em;
+  .AboutPage .History .container .history .header h2 {
+    font-size: 1.6em;
   }
 }
 
-.ContactPage .container .text .content {
-  display: -ms-grid;
-  display: grid;
-  font-size: 2em;
+.AboutPage .History .container .history .header h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: #e33b28;
 }
 
-.MainApp .UserMessage .header p span {
-  font-size: 0.85em;
-}
-
-.MainApp .UserMessage .header p span:first-of-type {
-  font-size: 1em;
+.AboutPage .History .container .history .header p {
+  font-size: 1.24em;
   font-weight: bold;
 }
 
-.MainApp .UserMessage .body {
-  padding: 12px 5%;
-  color: #000;
-}
-
-.MainApp .UserMessage .body .details .message_details .time {
-  font-size: 0.75em;
-  text-align: center;
-}
-
-.MainApp .UserMessage .body .details .message_details .user_message {
-  background: #dcfcfa;
-  width: 70%;
-  margin: 0.5em 0 2em;
-  padding: 8px 15px;
-  border-radius: 8px 8px 32px 8px;
-  -webkit-box-shadow: 2px 2px 4px #6e6e6e;
-          box-shadow: 2px 2px 4px #6e6e6e;
-}
-
-.MainApp .UserMessage .body form {
-  margin: 2em 0 0;
-  padding: unset;
-}
-
 @media screen and (min-width: 726px) {
-  .ContactPage .container {
+  .AboutPage .History .container .history .header p {
+    font-size: 1.24em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .AboutPage .History .container .history .header p {
+    font-size: 1.6em;
+  }
+}
+
+.AboutPage .History .container .history p {
+  line-height: 1.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  .AboutPage .About .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 4em;
+  }
+  .AboutPage .About .container .image {
+    height: 500px;
+  }
+  .AboutPage .About .container .content .section_header {
+    text-align: left;
+  }
+  .AboutPage .History {
+    margin: 5em 0;
+  }
+  .AboutPage .History .container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+
+.ContactPage .Contact {
+  min-height: 90dvh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ContactPage .Contact .container {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  width: 90%;
+  margin: auto;
+}
+
+.ContactPage .Contact .container .contact_details {
+  padding: 16px 0 0;
+}
+
+.ContactPage .Contact .container .contact_details .header {
+  margin: 0 0 2.5em;
+}
+
+.ContactPage .Contact .container .contact_details .header h1 {
+  margin: 0 0 0.5em;
+  font-size: 1.84em;
+}
+
+.ContactPage .Contact .container .contact_details .contact {
+  width: 60%;
+}
+
+.ContactPage .Contact .container .contact_details .contact p {
+  line-height: 1.5;
+  margin: 0.5em 0;
+  font-size: 1.28em;
+}
+
+.ContactPage .Contact .container .contact_details .contact .details {
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+}
+
+.ContactPage .Contact .container .contact_details .contact .details .detail {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35px 1fr;
+      grid-template-columns: 35px 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5em;
+}
+
+.ContactPage .Contact .container .contact_details .contact .details .detail p {
+  display: -ms-grid;
+  display: grid;
+}
+
+.ContactPage .Contact .container .contact_form .inputs {
+  position: relative;
+  min-height: 3.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.ContactPage .Contact .container .contact_form .inputs:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.ContactPage .Contact .container .contact_form .inputs input,
+.ContactPage .Contact .container .contact_form .inputs textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 8px;
+  outline: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background: transparent;
+}
+
+.ContactPage .Contact .container .contact_form .inputs input:focus,
+.ContactPage .Contact .container .contact_form .inputs textarea:focus {
+  border-color: blue;
+}
+
+.ContactPage .Contact .container .contact_form .inputs input:focus + label,
+.ContactPage .Contact .container .contact_form .inputs input:not(:placeholder-shown) + label,
+.ContactPage .Contact .container .contact_form .inputs textarea:focus + label,
+.ContactPage .Contact .container .contact_form .inputs textarea:not(:placeholder-shown) + label {
+  top: -0.84rem;
+  left: 0rem;
+  font-size: 0.96rem;
+  color: blue;
+  padding: 0 0.4rem;
+  background: white;
+}
+
+.ContactPage .Contact .container .contact_form .inputs label {
+  position: absolute;
+  left: 1rem;
+  top: 1.5em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.ContactPage .Contact .container .contact_form .inputs span {
+  display: block;
+  font-weight: bold;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.ContactPage .Contact .container .contact_form button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .ContactPage .Contact .container {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .UserMessage {
-    width: 40dvw;
-    margin: auto;
+  .ContactPage .Contact .container .contact_form {
+    padding: 16px;
   }
 }
 

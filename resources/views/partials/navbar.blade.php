@@ -11,6 +11,7 @@
                 ['route' => 'home-page', 'text' => 'Home'],
                 ['route' => 'about-page', 'text' => 'About'],
                 ['route' => 'services-page', 'text' => 'Services'],
+                ['route' => 'products-page', 'text' => 'Products'],
                 ['route' => 'contact-page', 'text' => 'Contact'],
             ];
         @endphp

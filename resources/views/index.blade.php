@@ -26,46 +26,59 @@
     </x-slot>
 
     <section class="Hero">
-        <div class="container">
-            <h1>Welcome to {{ config('globals.app_name') }}</h1>
-            <p>Your trusted partner in gold refining, smelting, and bullion trading.</p>
+        <div class="container_fluid">
+            <div class="illustration">
+                <video autoplay muted loop playsinline preload="auto">
+                    <source src="{{ asset('assets/images/afriswiss-commodities-trading-limited-hero-video.webm') }}" type="video/webm">
+                        Your browser does not support the video tag.
+                    </source>
+                </video>
+            </div>
+            <div class="text">
+                <h1>Welcome to {{ config('globals.app_name') }}</h1>
+                <p>Your trusted partner in gold refining, smelting, and bullion trading.</p>
+            </div>
         </div>
     </section>
 
     <section class="About">
         <div class="container">
-            <div class="header">
-                <h2>Precious Metals Services</h2>
-                <p>Refining, Smelting, Evaluation, Investment</p>
-            </div>
-
             <div class="content">
+                <div class="section_header">
+                    <h2>Precious Metals Services</h2>
+                    <p>Refining, Smelting, Evaluation, Investment</p>
+                </div>
+
                 <div class="text">
                     <p>At {{ config('globals.app_name') }}, we offer end-to-end solutions across the precious metals value chain. Our expertise includes world-class smelting, refining, and recovery of responsibly sourced metals. We fabricate investment-grade bullion and custom metal products for retail clients.</p>
                     <p>Utilizing advanced smelting processes, we recover low-grade precious metals and concentrates, providing superior refining solutions for primary and secondary depositors.</p>
                 </div>
+            </div>
 
-                <div class="image">
-                    <p>The {{ config('globals.app_name') }} hallmark is recognized on cast and minted bars. We also offer customized legal tender coin minting upon request.</p>
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="About {{ config('globals.app_name') }}">
-                </div>
+            <div class="image">
+                <p>The {{ config('globals.app_name') }} hallmark is recognized on cast and minted bars. We also offer customized legal tender coin minting upon request.</p>
+                <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-smelting.webp') }}" alt="About {{ config('globals.app_name') }}">
             </div>
         </div>
     </section>
 
     <section class="CTA">
         <div class="container">
-            <h2>Looking for Professional Precious Metal Services?</h2>
             <div class="cta">
-                <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Call Us Icon">
-                <p>Contact Us Today: {{ config('globals.app_phone_number') }}</p>
+                <h2>Looking for Professional Precious Metal Services?</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="{{ asset('assets/images/telephone.png') }}" alt="Call Us Icon" width="30" height="30">
+                    </div>
+                    <p>Contact Us Today: {{ config('globals.app_phone_number') }}</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="Services">
         <div class="container">
-            <div class="header">
+            <div class="section_header">
                 <h2>Our Core Services</h2>
                 <p>Premium gold refining, smelting, assaying, and investment solutions</p>
             </div>
@@ -73,7 +86,7 @@
             <div class="content">
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Gold Refining">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-refining.webp') }}" alt="{{ config('globals.app_name') }} Gold Refining">
                     </div>
                     <div class="card_content">
                         <p class="title">Gold & Precious Metal Refining</p>
@@ -84,7 +97,7 @@
 
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Smelting">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-smelting.webp') }}" alt="{{ config('globals.app_name') }} Smelting">
                     </div>
                     <div class="card_content">
                         <p class="title">Smelting & Metal Recovery</p>
@@ -95,7 +108,7 @@
 
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Assaying Services">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-assaying.webp') }}" alt="{{ config('globals.app_name') }} Assaying">
                     </div>
                     <div class="card_content">
                         <p class="title">Assaying & Metal Purity Testing</p>
@@ -106,7 +119,7 @@
 
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Bullion Trading">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-bullion-trading.webp') }}" alt="{{ config('globals.app_name') }} Bullion Trading">
                     </div>
                     <div class="card_content">
                         <p class="title">Bullion Trading & Investment</p>
@@ -117,7 +130,7 @@
 
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Minting">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-minting.webp') }}" alt="{{ config('globals.app_name') }} Minting">
                     </div>
                     <div class="card_content">
                         <p class="title">Custom Minting Services</p>
@@ -128,7 +141,7 @@
 
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Logistics">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-transport.webp') }}" alt="{{ config('globals.app_name') }} Logistics">
                     </div>
                     <div class="card_content">
                         <p class="title">Secure Transportation & Logistics</p>

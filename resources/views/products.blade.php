@@ -37,68 +37,69 @@
         
     </x-slot>
 
-    <section class="Hero">
+    <section class="Hero page_hero">
         <div class="container">
             <h1>Premium Gold Products</h1>
-            <p>Explore our high-quality range of gold investment products, including Minted Bars, Cast Bars, Coin Blanks, and Gold Nuggets.</p>
         </div>
     </section>
 
     <section class="Products">
         <div class="container">
+            {{-- <p>Explore our high-quality range of gold investment products, including Minted Bars, Cast Bars, Coin Blanks, and Gold Nuggets.</p> --}}
+
             <div class="product" id="minted-bars">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Minted Gold Bars">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-minted-bars.webp') }}" alt="{{ config('globals.app_name') }} Minted Gold Bars">
                 </div>
 
                 <div class="text">
                     <div class="header">
                         <h2>Minted Bars</h2>
                     </div>
-                    <p>Our **minted gold bars** are crafted with precision to ensure exceptional quality and purity. Available in **10g, 50g, and 100g gold** as well as **1oz silver**, these bars are an excellent investment for both individuals and businesses.</p>
+                    <p>Our minted gold bars are crafted with precision to ensure exceptional quality and purity. Available in 10g, 50g, and 100g gold as well as 1oz silver, these bars are an excellent investment for both individuals and businesses.</p>
                     <p>As an authorized agent for top gold producers, {{ config('globals.app_name') }} collaborates with LBMA-accredited refineries to ensure every bar meets international standards.</p>
                 </div>
             </div>
 
             <div class="product" id="cast-bars">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Cast Gold Bars">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-cast-bars.webp') }}" alt="{{ config('globals.app_name') }} Cast Gold Bars">
                 </div>
 
                 <div class="text">
                     <div class="header">
                         <h2>Cast Bars</h2>
                     </div>
-                    <p>Our **Good Delivery Cast Bars** are recognized globally by traders, banks, and investors. These bars come in **100 troy ounces and 400 troy ounces (LGD bars)**, meeting **London Good Delivery (LBMA) standards**.</p>
-                    <p>{{ config('globals.app_name') }} has been a trusted supplier of **cast bars since 1974**, ensuring high purity and compliance with global trading platforms.</p>
+                    <p>Our Good Delivery Cast Bars are recognized globally by traders, banks, and investors. These bars come in 100 troy ounces and 400 troy ounces (LGD bars), meeting London Good Delivery (LBMA) standards.</p>
+                    <p>{{ config('globals.app_name') }} has been a trusted supplier of cast bars since 1974, ensuring high purity and compliance with global trading platforms.</p>
                 </div>
             </div>
 
             <div class="product" id="coin-blanks">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Gold Coin Blanks">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-coin-blanks.webp') }}" alt="{{ config('globals.app_name') }} Gold Coin Blanks">
                 </div>
 
                 <div class="text">
                     <div class="header">
                         <h2>Coin Blanks</h2>
                     </div>
-                    <p>Our **gold coin blanks** are crafted with precision for mints worldwide. Each blank undergoes rigorous quality control to ensure accurate weight, size, and gold purity.</p>
-                    <p>We supply **9ct, 14ct, 18ct, 22ct, and 24ct (9999)** gold blanks, as well as **999 silver blanks**, meeting the highest industry standards.</p>
+                    <p>Our gold coin blanks are crafted with precision for mints worldwide. Each blank undergoes rigorous quality control to ensure accurate weight, size, and gold purity.</p>
+                    <p>We supply 9ct, 14ct, 18ct, 22ct, and 24ct (9999) gold blanks, as well as 999 silver blanks, meeting the highest industry standards.</p>
                 </div>
             </div>
 
             <div class="product" id="gold-nuggets">
                 <div class="image">
-                    <img src="{{ asset('assets/images/default_image.jpg') }}" alt="Gold Nuggets">
+                    <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-nuggets.webp') }}" alt="{{ config('globals.app_name') }} Gold Nuggets">
                 </div>
 
                 <div class="text">
                     <div class="header">
                         <h2>Gold Nuggets</h2>
                     </div>
-                    <p>We provide **gold nuggets and granules** for investment and industrial applications. Our gold alloys, available in **sterling silver and various carat grades**, are trusted by jewelry manufacturers and refiners worldwide.</p>
-                    <p>All our gold products are sourced from **responsible mining** and refined to **industry-leading standards**.</p>
+                    <p>We provide gold nuggets and granules for investment and industrial applications. Our gold alloys, available in sterling silver and various carat grades, are trusted by jewelry manufacturers and refiners worldwide.</p>
+                    <p>All our gold products are sourced from responsible mining and refined to industry-leading standards.</p>
                 </div>
             </div>
         </div>

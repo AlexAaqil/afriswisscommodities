@@ -1,0 +1,84 @@
+.AboutPage {
+    .About {
+        .content {
+            p {
+                margin: 0 0 1.6em;
+            }
+        }
+    }
+
+    .History {
+        .container {
+            display: grid;
+            gap: 2em;
+
+            .history {
+                border: 1px solid $faded_line;
+                border-radius: 8px;
+                padding: 16px 12px;
+
+                .header {
+                    margin: 0 0 1.2em;
+
+                    h2 {
+                        @include font_size(1.2em, 1.2em, 1.6em);
+                        margin: 0 0 0.68em;
+                        color: $special_background;
+                        position: relative;
+                        display: inline-block;
+                    
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: -8px;
+                            width: 100%;
+                            height: 2px;
+                            background-color: $special_background;
+                        }
+                    }
+
+                    p {
+                        @include font_size(1.24em, 1.24em, 1.6em);
+                        font-weight: bold;
+                    }
+                }
+
+                p {
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .AboutPage {
+        .About {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4em;
+
+                .image {
+                    height: 500px;
+                }
+
+                .content {
+                    .section_header {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .History {
+            margin: 5em 0;
+
+            .container {
+                grid-template-columns: 1fr 1fr 1fr;
+                text-align: center;
+            }
+        }
+    }
+}

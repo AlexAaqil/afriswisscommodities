@@ -9,6 +9,7 @@ use App\Http\Controllers\MessageController;
 Route::view('/', 'index')->name('home-page');
 Route::view('/about', 'about')->name('about-page');
 Route::view('/services', 'services')->name('services-page');
+Route::view('/products', 'products')->name('products-page');
 Route::view('/contact', 'contact')->name('contact-page');
 Route::post('/contact', [MessageController::class, 'store'])->name('messages.store');
 

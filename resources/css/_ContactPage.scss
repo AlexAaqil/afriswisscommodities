@@ -1,77 +1,134 @@
 .ContactPage {
-    .container {
-        display: grid;
-        gap: 1em;
+    .Contact {
+        min-height: 90dvh;
+        display: flex;
         align-items: center;
 
-        .text {
-            .title {
-                @include font_size(1.2em, 1.2em, 3.2em);
-                margin: 0 0 0.8em;
-            }
-
-            .content {
-                display: grid;
-                font-size: 2em;
-            }
-        }
-    }
-}
-
-.MainApp {
-    .UserMessage {
-        .header {
-            p {
-                span {
-                    font-size: 0.85em;
-
-                    &:first-of-type {
-                        font-size: 1em;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-
-        .body {
-            padding: 12px 5%;
-            color: #000;
-
-            .details {
-                .message_details {
-                    .time {
-                        font-size: 0.75em;
-                        text-align: center;
-                    }
-    
-                    .user_message {
-                        background: #dcfcfa;
-                        width: 70%;
-                        margin: 0.5em 0 2em;
-                        padding: 8px 15px;
-                        border-radius: 8px 8px 32px 8px;
-                        box-shadow: 2px 2px 4px #6e6e6e;
-                    }
-                }
-            }
-
-            form {
-                margin: 2em 0 0;
-                padding: unset;
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 726px) {
-    .ContactPage {
         .container {
-            grid-template-columns: 1fr 1fr;
+            display: grid;
+            gap: 2em;
+            width: 90%;
+            margin: auto;
+
+            .contact_details {
+                padding: 16px 0 0;
+
+                .header {
+                    margin: 0 0 2.5em;
+
+                    h1 {
+                        margin: 0 0 0.5em;
+                        font-size: 1.84em;
+                    }
+                }
+
+                .contact {
+                    width: 60%;
+
+                    p {
+                        line-height: 1.5;
+                        margin: 0.5em 0;
+                        font-size: 1.28em;
+                    }
+
+                    .details {
+                        display: grid;
+                        gap: 2em;
+
+                        .detail {
+                            display: grid;
+                            grid-template-columns: 35px 1fr;
+                            align-items: center;
+                            gap: 0.5em;
+
+                            p {
+                                display: grid;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .contact_form {
+                .inputs {
+                    position: relative;
+                    min-height: 3.5rem;
+                    margin-bottom: 2.5rem;
+
+                    &:last-of-type {
+                        margin-bottom: 2rem;
+                    }
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        padding: 0.8rem;
+                        font-size: 1rem;
+                        border: 1px solid grey;
+                        border-radius: 8px;
+                        outline: none;
+                        transition: 0.3s ease-in-out;
+                        background: transparent;
+
+                        &:focus {
+                            border-color: blue;
+                        }
+
+                        &:focus+label,
+                        &:not(:placeholder-shown)+label {
+                            top: -0.84rem;
+                            left: 0rem;
+                            font-size: 0.96rem;
+                            color: blue;
+                            padding: 0 0.4rem;
+                            background: white;
+                        }
+                    }
+
+                    label {
+                        position: absolute;
+                        left: 1rem;
+                        top: 1.5em;
+                        transform: translateY(-50%);
+                        font-size: 1rem;
+                        pointer-events: none;
+                        transition: 0.3s ease-in-out;
+                    }
+
+                    span {
+                        display: block;
+                        font-weight: bold;
+                        color: red;
+                        font-size: 0.9rem;
+                        margin-top: 0.3rem;
+                    }
+                }
+
+                button {
+                    background: black;
+                    color: white;
+                    border: none;
+                    padding: 12px 24px;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+            }
         }
     }
+}
 
-    .UserMessage {
-        width: 40dvw;
-        margin: auto;
+@media screen and (min-width: 1024px) {
+    .ContactPage {
+        .Contact {
+            .container {
+                grid-template-columns: 1fr 1fr;
+
+                .contact_form {
+                    padding: 16px;
+                }
+            }
+        }
     }
 }
