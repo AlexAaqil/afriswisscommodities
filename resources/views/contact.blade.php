@@ -37,13 +37,13 @@
                     <div class="details">
                         <div class="detail">
                             <img src="{{ asset('assets/images/email.png') }}" alt="Email" width="30" height="30">
-                            <p>alexaaqil.se@gmail.com</p>
+                            <p>{{ config('globals.app_email') }}</p>
                         </div>
 
                         <div class="detail">
                             <img src="{{ asset('assets/images/telephone.png') }}" alt="Telephone" width="30" height="30">
                             <p>
-                                <span>+254 746 055 487</span>
+                                <span>{{ config('globals.app_phone_number') }}</span>
                             </p>
                         </div>
 
