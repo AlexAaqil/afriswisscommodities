@@ -274,14 +274,14 @@ nav {
   grid-template-columns: 50% 1fr auto;
   gap: 1em;
   position: sticky;
-  background: #fff;
-  color: #000;
+  background: #121212;
+  color: #fff;
   top: 0;
   backdrop-filter: blur(5px);
   z-index: 1000;
 }
 nav a {
-  color: #000;
+  color: #fff;
 }
 nav a:hover {
   color: #e33b28;

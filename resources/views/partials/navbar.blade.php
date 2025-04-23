@@ -1,7 +1,7 @@
 <nav>
     <div class="brand">
         <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}" class="title">
-            {{ $appSettings['app_acronym'] ?? config('globals.app_acronym') }}
+            {{ config('globals.app_name') }}
         </a>
     </div>
 

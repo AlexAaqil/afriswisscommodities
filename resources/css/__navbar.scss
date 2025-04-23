@@ -6,14 +6,14 @@ nav {
     grid-template-columns: 50% 1fr auto;
     gap: 1em;
     position: sticky;
-    background: $background_color;
-    color: $text_color;
+    background: $navbar_background;
+    color: $navbar_color;
     top: 0;
     backdrop-filter: blur(5px);
     z-index: 1000;
 
     a {
-        color: $text_color;
+        color: $navbar_color;
 
         &:hover {
             color: $special_background;
