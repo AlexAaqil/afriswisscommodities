@@ -51,5 +51,5 @@
         </section>
     </div>
 
-    <p class="copyright">&copy; 2025 | {{ config('globals.app_name') }}</p>
+    <p class="copyright">&copy; 2015 | {{ config('globals.app_name') }}</p>
 </footer>
