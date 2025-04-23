@@ -88,7 +88,7 @@ form {
 
                     span {
                         &:first-of-type {
-                            color: darken($faded_text, 30);
+                            color: adjust($faded_text, 30);
                         }
                     }
                 }
