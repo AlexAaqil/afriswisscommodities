@@ -1,7 +1,7 @@
 <x-guest-layout class="ServicesPage">
     <x-slot name="head">
         <meta name="description" content="At {{ config('globals.app_name') }}, we offer a wide range of services with a specialization in gold refining, smelting, and bullion trading.">
-        <meta name="keywords" content="gold refining {{ config('globals.app_location') }}, gold refinery {{ config('globals.app_location') }}, smelting, bullion trading, gold investment, metal recycling, gold assay, precious metals">
+        <meta name="keywords" content="afriswiss, afriswiss commodities, afriswiss gold refinery, gold refining {{ config('globals.app_location') }}, gold refinery {{ config('globals.app_location') }}, smelting, bullion trading, gold investment, metal recycling, gold assay, precious metals">
         <title>{{ config('globals.app_name') }} | Services We Provide</title>
 
         <script type="application/ld+json">
@@ -12,8 +12,8 @@
             "provider": {
                 "@type": "Organization",
                 "name": "{{ config('globals.app_name') }}",
-                "url": "{{ url('/') }}",
-                "logo": "{{ url('/images/logo.png') }}"
+                "url": "{{ url('/services') }}",
+                "logo": "{{ url('/assets/images/logo.png') }}"
             },
             "description": "{{ config('globals.app_name') }} provides professional gold refining services, ensuring the highest purity standards.",
             "areaServed": {
@@ -31,8 +31,8 @@
             "provider": {
                 "@type": "Organization",
                 "name": "{{ config('globals.app_name') }}",
-                "url": "{{ url('/') }}",
-                "logo": "{{ url('/images/logo.png') }}"
+                "url": "{{ url('/services') }}",
+                "logo": "{{ url('/assets/images/logo.png') }}"
             },
             "description": "{{ config('globals.app_name') }} specializes in fire assay and ICP testing to determine the purity of gold and other precious metals.",
             "areaServed": {
@@ -50,8 +50,8 @@
             "provider": {
                 "@type": "Organization",
                 "name": "{{ config('globals.app_name') }}",
-                "url": "{{ url('/') }}",
-                "logo": "{{ url('/images/logo.png') }}"
+                "url": "{{ url('/services') }}",
+                "logo": "{{ url('/assets/images/logo.png') }}"
             },
             "description": "As a leading gold refinery, {{ config('globals.app_name') }} offers high-quality smelting and metal recovery services.",
             "areaServed": {
@@ -69,8 +69,8 @@
             "provider": {
                 "@type": "Organization",
                 "name": "{{ config('globals.app_name') }}",
-                "url": "{{ url('/') }}",
-                "logo": "{{ url('/images/logo.png') }}"
+                "url": "{{ url('/services') }}",
+                "logo": "{{ url('/assets/images/logo.png') }}"
             },
             "description": "{{ config('globals.app_name') }} buys and sells gold, silver, and other precious metals at competitive market rates.",
             "areaServed": {
@@ -88,8 +88,8 @@
             "provider": {
                 "@type": "Organization",
                 "name": "{{ config('globals.app_name') }}",
-                "url": "{{ url('/') }}",
-                "logo": "{{ url('/images/logo.png') }}"
+                "url": "{{ url('/services') }}",
+                "logo": "{{ url('/assets/images/logo.png') }}"
             },
             "description": "{{ config('globals.app_name') }} provides custom minting services for coins, bars, and medals.",
             "areaServed": {
@@ -107,8 +107,8 @@
             "provider": {
                 "@type": "Organization",
                 "name": "{{ config('globals.app_name') }}",
-                "url": "{{ url('/') }}",
-                "logo": "{{ url('/images/logo.png') }}"
+                "url": "{{ url('/services') }}",
+                "logo": "{{ url('/assets/images/logo.png') }}"
             },
             "description": "{{ config('globals.app_name') }} provides secure and efficient logistics solutions for transporting precious metals.",
             "areaServed": {

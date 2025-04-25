@@ -1,7 +1,7 @@
 <x-guest-layout class="ProductsPage">
     <x-slot name="head">
         <meta name="description" content="Discover premium gold products at {{ config('globals.app_name') }}, including minted bars, cast bars, coin blanks, and gold nuggets.">
-        <meta name="keywords" content="minted gold bars, cast gold bars, coin blanks, gold nuggets, bullion trading, gold refining {{ config('globals.app_location') }}, gold investment, precious metals market">
+        <meta name="keywords" content="afriswiss, afriswiss commodities, afriswiss gold refinery, minted gold bars, cast gold bars, coin blanks, gold nuggets, bullion trading, gold refining {{ config('globals.app_location') }}, gold investment, precious metals market">
         <title>{{ config('globals.app_name') }} | Our Gold Products</title>
 
         {{-- Structured Data for SEO --}}

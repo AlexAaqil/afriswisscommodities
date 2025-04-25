@@ -1,7 +1,7 @@
 <x-guest-layout class="HomePage">
     <x-slot name="head">
-        <meta name="description" content="{{ config('globals.app_name') }} is a leading precious metals company based in {{ config('globals.app_address') }}, specializing in gold refining, smelting, and bullion trading.">
-        <meta name="keywords" content="gold refining, precious metals, smelting, bullion trading, gold investment, metal recycling, gold assay">
+        <meta name="description" content="{{ config('globals.app_name') }} is a gold refinery company based in {{ config('globals.app_address') }}. We're top rated for our specialization in gold refining, smelting, and bullion trading.">
+        <meta name="keywords" content="afriswiss, afriswiss commodities, afriswiss gold refinery, {{ config('globals.app_name') }}, gold refining, precious metals, smelting, bullion trading, gold investment, metal recycling, gold assay">
         <title>{{ config('globals.app_name') }} | Premier Gold Refinery & Precious Metals Experts</title>
 
         <script type="application/ld+json">
@@ -10,17 +10,17 @@
             "@type": "Organization",
             "name": "{{ config('globals.app_name') }}",
             "url": "{{ url('/') }}",
-            "logo": "{{ url('/images/logo.png') }}",
+            "logo": "{{ url('/assets/images/logo.png') }}",
             "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "{{ config('globals.app_phone_number') }}",
                 "contactType": "customer service"
             },
-            "sameAs": [
-                "{{ config('globals.app_facebook') }}",
-                "{{ config('globals.app_twitter') }}",
-                "{{ config('globals.app_linkedin') }}"
-            ]
+            // "sameAs": [
+            //     "{{ config('globals.app_facebook') }}",
+            //     "{{ config('globals.app_twitter') }}",
+            //     "{{ config('globals.app_linkedin') }}"
+            // ]
         }
         </script>
     </x-slot>

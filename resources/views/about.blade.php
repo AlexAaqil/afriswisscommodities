@@ -1,7 +1,7 @@
 <x-guest-layout class="AboutPage">
     <x-slot name="head">
         <meta name="description" content="Discover {{ config('globals.app_name') }}, a leading gold refinery in East Africa. We specialize in gold refining, smelting, and bullion trading, delivering high-quality precious metal products to the global market.">
-        <meta name="keywords" content="gold refining {{ config('globals.app_location') }}, gold refinery {{ config('globals.app_location') }}, smelting, bullion trading, gold investment, metal recycling, gold assay, precious metals">
+        <meta name="keywords" content="afriswiss, afriswiss commodities, afriswiss gold refinery, gold refining {{ config('globals.app_location') }}, gold refinery {{ config('globals.app_location') }}, smelting, bullion trading, gold investment, metal recycling, gold assay, precious metals">
         <title>About {{ config('globals.app_name') }} | Leading Gold Refinery in {{ config('globals.app_location') }}</title>
 
         <script type="application/ld+json">
@@ -9,8 +9,8 @@
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "{{ config('globals.app_name') }}",
-            "url": "{{ url('/') }}",
-            "logo": "{{ url('/images/logo.png') }}",
+            "url": "{{ url('/about') }}",
+            "logo": "{{ url('/assets/images/logo.png') }}",
             "description": "A leading gold refinery in {{ config('globals.app_location') }}, specializing in refining, smelting, and bullion trading.",
             "address": {
                 "@type": "PostalAddress",
