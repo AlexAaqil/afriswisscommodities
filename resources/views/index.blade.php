@@ -1,7 +1,7 @@
 <x-guest-layout class="HomePage">
     <x-slot name="head">
-        <meta name="description" content="Afriswiss Commodities - Kenya's trusted gold refinery and trading company. Professional gold refining, smelting, and bullion services in Nairobi. Licensed precious metals buyers and refiners.">
-        <meta name="keywords" content="Afriswiss Commodities, gold refinery Kenya, gold buyers Nairobi, precious metals trading Kenya, gold refining services Kenya, gold smelting Nairobi, licensed gold buyers Kenya, bullion trading East Africa">
+        <meta name="description" content="Afriswiss Commodities is Kenya’s premier gold refinery and trading company. Discover expert refining, smelting, and bullion services in Nairobi.">
+        <meta name="keywords" content="afriswiss commodities, gold refinery Kenya, gold buyers Nairobi, precious metals trading Kenya, gold refining services Kenya, gold smelting Nairobi, licensed gold buyers Kenya, bullion trading East Africa">
         <link rel="canonical" href="https://afriswisscommodities.co.ke">
         <title>Afriswiss Commodities | Gold Refinery Kenya</title>
 
