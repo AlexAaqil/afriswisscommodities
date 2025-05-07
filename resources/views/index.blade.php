@@ -1,26 +1,34 @@
 <x-guest-layout class="HomePage">
     <x-slot name="head">
-        <meta name="description" content="{{ config('globals.app_name') }} is a gold refinery company based in {{ config('globals.app_address') }}. We're top rated for our specialization in gold refining, smelting, and bullion trading.">
-        <meta name="keywords" content="afriswiss, afriswiss commodities, afriswiss gold refinery, {{ config('globals.app_name') }}, gold refining, precious metals, smelting, bullion trading, gold investment, metal recycling, gold assay">
-        <title>{{ config('globals.app_name') }} | Premier Gold Refinery & Precious Metals Experts</title>
+        <meta name="description" content="Afriswiss Commodities - Licensed gold refinery and trading company in Kenya. Specialized in gold refining, smelting, and bullion services. Official precious metals buyers and refiners in Nairobi.">
+        <meta name="keywords" content="Afriswiss Commodities, gold refinery Kenya, gold buyers Nairobi, precious metals trading Kenya, gold refining services Kenya, gold smelting Nairobi, licensed gold buyers Kenya, bullion trading East Africa">
+        <link rel="canonical" href="https://afriswisscommodities.co.ke">
+        <title>Afriswiss Commodities | Gold Refinery & Trading Company Kenya</title>
 
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "{{ config('globals.app_name') }}",
-            "url": "{{ url('/') }}",
+            "name": "Afriswiss Commodities",
+            "alternateName": "Afriswiss Commodities Trading Limited",
+            "url": "https://afriswisscommodities.co.ke",
             "logo": "{{ url('/assets/images/logo.png') }}",
+            "description": "Kenya's premier gold refinery specializing in gold refining, trading, and precious metals services",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "Kenya",
+                "addressLocality": "Nairobi",
+                "addressRegion": "Nairobi"
+            },
             "contactPoint": {
                 "@type": "ContactPoint",
                 "telephone": "{{ config('globals.app_phone_number') }}",
-                "contactType": "customer service"
+                "contactType": "customer service",
+                "areaServed": ["Kenya", "East Africa"]
             },
-            // "sameAs": [
-            //     "{{ config('globals.app_facebook') }}",
-            //     "{{ config('globals.app_twitter') }}",
-            //     "{{ config('globals.app_linkedin') }}"
-            // ]
+            "sameAs": [
+                "https://www.linkedin.com/company/afriswiss-commodities"
+            ]
         }
         </script>
     </x-slot>
@@ -35,8 +43,8 @@
                 </video>
             </div>
             <div class="text">
-                <h1>Welcome to {{ config('globals.app_name') }}</h1>
-                <p>Your trusted partner in gold refining, smelting, and bullion trading.</p>
+                <h1>Afriswiss Commodities</h1>
+                <p>Kenyan's Premier Gold Refinery & Trading Company.</p>
             </div>
         </div>
     </section>
@@ -45,13 +53,13 @@
         <div class="container">
             <div class="content">
                 <div class="section_header">
-                    <h2>Precious Metals Services</h2>
-                    <p>Refining, Smelting, Evaluation, Investment</p>
+                    <h2>About Afriswiss Commodities</h2>
+                    <p>Licensed Gold Refinery & Trading Company in Kenya</p>
                 </div>
 
                 <div class="text">
-                    <p>At {{ config('globals.app_name') }}, we offer end-to-end solutions across the precious metals value chain. Our expertise includes world-class smelting, refining, and recovery of responsibly sourced metals. We fabricate investment-grade bullion and custom metal products for retail clients.</p>
-                    <p>Utilizing advanced smelting processes, we recover low-grade precious metals and concentrates, providing superior refining solutions for primary and secondary depositors.</p>
+                    <p>Afriswiss Commodities is Kenya's premier gold refinery, offering comprehensive solutions across the precious metals value chain. Our state-of-the-art facility in Nairobi specializes in world-class smelting, refining, and recovery of responsibly sourced precious metals. We serve both local and international clients with professional gold buying, refining, and trading services.</p>
+                    <p>As a licensed gold buyer and refiner in Kenya, our advanced smelting processes and cutting-edge technology enable us to recover and refine precious metals to the highest purity standards, providing superior solutions for mining companies, financial institutions, and private investors.</p>
                 </div>
             </div>
 
@@ -79,25 +87,25 @@
     <section class="Services">
         <div class="container">
             <div class="section_header">
-                <h2>Our Core Services</h2>
-                <p>Premium gold refining, smelting, assaying, and investment solutions</p>
+                <h2>Gold Refinery Services in Kenya</h2>
+                <p>Licensed Gold Refining, Trading, and Investment Solutions in East Africa</p>
             </div>
 
             <div class="content">
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-refining.webp') }}" alt="{{ config('globals.app_name') }} Gold Refining">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-refining.webp') }}" alt="Afriswiss Commodities Gold Refining Process in Kenya">
                     </div>
                     <div class="card_content">
-                        <p class="title">Gold & Precious Metal Refining</p>
-                        <p class="text">We specialize in refining gold, silver, platinum, and other precious metals using state-of-the-art technology to achieve the highest purity standards.</p>
-                        <a href="{{ url('/services#gold-refining') }}">Learn more about our Refining Services</a>
+                        <p class="title">Professional Gold Refining in Kenya</p>
+                        <p class="text">Kenya's leading gold refinery specializing in refining gold, silver, platinum, and other precious metals. We use advanced technology to achieve international purity standards, serving mining companies and private investors across East Africa.</p>
+                        <a href="{{ url('/services#gold-refining') }}">Learn more about our Gold Refining Services in Kenya</a>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-smelting.webp') }}" alt="{{ config('globals.app_name') }} Smelting">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-gold-smelting.webp') }}" alt="Afriswiss Commodities Gold Smelting Facility in Nairobi">
                     </div>
                     <div class="card_content">
                         <p class="title">Smelting & Metal Recovery</p>
@@ -108,7 +116,7 @@
 
                 <div class="card">
                     <div class="image">
-                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-assaying.webp') }}" alt="{{ config('globals.app_name') }} Assaying">
+                        <img src="{{ asset('assets/images/afriswiss-commodities-trading-limited-assaying.webp') }}" alt="Afriswiss Commodities Gold Assaying and Testing Laboratory">
                     </div>
                     <div class="card_content">
                         <p class="title">Assaying & Metal Purity Testing</p>
