@@ -1,9 +1,9 @@
 <x-guest-layout class="HomePage">
     <x-slot name="head">
-        <meta name="description" content="Afriswiss Commodities - Licensed gold refinery and trading company in Kenya. Specialized in gold refining, smelting, and bullion services. Official precious metals buyers and refiners in Nairobi.">
+        <meta name="description" content="Afriswiss Commodities - Kenya's trusted gold refinery and trading company. Professional gold refining, smelting, and bullion services in Nairobi. Licensed precious metals buyers and refiners.">
         <meta name="keywords" content="Afriswiss Commodities, gold refinery Kenya, gold buyers Nairobi, precious metals trading Kenya, gold refining services Kenya, gold smelting Nairobi, licensed gold buyers Kenya, bullion trading East Africa">
         <link rel="canonical" href="https://afriswisscommodities.co.ke">
-        <title>Afriswiss Commodities | Gold Refinery & Trading Company Kenya</title>
+        <title>Afriswiss Commodities | Gold Refinery Kenya</title>
 
         <script type="application/ld+json">
         {
@@ -98,8 +98,8 @@
                     </div>
                     <div class="card_content">
                         <p class="title">Professional Gold Refining in Kenya</p>
-                        <p class="text">Kenya's leading gold refinery specializing in refining gold, silver, platinum, and other precious metals. We use advanced technology to achieve international purity standards, serving mining companies and private investors across East Africa.</p>
-                        <a href="{{ url('/services#gold-refining') }}">Learn more about our Gold Refining Services in Kenya</a>
+                        <p class="text">As Kenya's leading gold refinery, we specialize in refining gold, silver, platinum, and other precious metals to international standards. Our advanced refining technology and expert metallurgists ensure maximum metal recovery and purity up to 99.99%. We serve mining companies, financial institutions, and private investors across East Africa with professional refining solutions.</p>
+                        <a href="{{ url('/services#gold-refining') }}" class="service-link">Learn more about our Gold Refining Services in Kenya</a>
                     </div>
                 </div>
 
